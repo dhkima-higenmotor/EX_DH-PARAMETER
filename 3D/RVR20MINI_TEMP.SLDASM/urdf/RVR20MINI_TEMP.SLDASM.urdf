@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RVR20MINI_TEMP.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.54392989783833E-19 0.00929477297706579 -4.97751632708001E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.222689917520898" />
+      <inertia
+        ixx="0.000274819264637115"
+        ixy="2.12307564773359E-22"
+        ixz="-8.43724224804088E-22"
+        iyy="0.000504168707813865"
+        iyz="3.30151799404048E-20"
+        izz="0.000274819264637115" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="4.62021943050826E-08 0.0290788057145743 0.0039991736964342"
+        rpy="0 0 0" />
+      <mass
+        value="0.0135740350807715" />
+      <inertia
+        ixx="3.17413819671584E-06"
+        ixy="-4.9658714749571E-12"
+        ixz="-5.58072402315751E-14"
+        iyy="1.17924282424669E-06"
+        iyz="-5.42909059002371E-07"
+        izz="2.86969719383377E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0269"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="-2.86549203059779E-08 0.0379819705942048 0.0146881991179847"
+        rpy="0 0 0" />
+      <mass
+        value="0.0178773231133194" />
+      <inertia
+        ixx="1.61172519331241E-05"
+        ixy="-6.56781619360596E-12"
+        ixz="-2.88191711186396E-13"
+        iyy="1.12725301541336E-06"
+        iyz="-4.65886551400449E-07"
+        izz="1.59956345044109E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="continuous">
+    <origin
+      xyz="0 0.041 0.014"
+      rpy="0 0 0" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="0.00996266171896739 0.000421532601606267 -0.00640507655955212"
+        rpy="0 0 0" />
+      <mass
+        value="0.00688735229966042" />
+      <inertia
+        ixx="6.07606488817262E-07"
+        ixy="-3.74747259520274E-09"
+        ixz="3.91374735946342E-07"
+        iyy="1.05305647372454E-06"
+        iyz="2.23933306921023E-08"
+        izz="8.02459745715922E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="continuous">
+    <origin
+      xyz="0 0.078 0"
+      rpy="0 0 0" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L4">
+    <inertial>
+      <origin
+        xyz="0.0352355780119412 -2.64065991295581E-10 -0.00123725202286405"
+        rpy="0 0 0" />
+      <mass
+        value="0.00560898359232287" />
+      <inertia
+        ixx="2.07371603867396E-07"
+        ixy="7.23817792241906E-15"
+        ixz="9.37522309866555E-08"
+        iyy="1.65030980742467E-06"
+        iyz="-2.20866861869871E-13"
+        izz="1.55712674582278E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="continuous">
+    <origin
+      xyz="0.0202 0 -0.014"
+      rpy="0 0 0" />
+    <parent
+      link="L3" />
+    <child
+      link="L4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="L5">
+    <inertial>
+      <origin
+        xyz="0.000752262824044059 1.71941863524872E-09 2.17215707045077E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.00131297721245455" />
+      <inertia
+        ixx="3.01450279534319E-08"
+        ixy="-6.34460906630942E-15"
+        ixz="1.24822423471461E-15"
+        iyy="3.85238716561722E-08"
+        iyz="-3.1621868550185E-13"
+        izz="4.69485728338966E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="continuous">
+    <origin
+      xyz="0.0556 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="L4" />
+    <child
+      link="L5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L6">
+    <inertial>
+      <origin
+        xyz="0.00020000000000002 2.77555756156289E-17 1.2102167109383E-19"
+        rpy="0 0 0" />
+      <mass
+        value="7.65456904028786E-05" />
+      <inertia
+        ixx="5.86052942147038E-10"
+        ixy="2.05657779795998E-26"
+        ixz="-9.14034576871102E-27"
+        iyy="3.36147210000475E-10"
+        iyz="-5.94122474966216E-26"
+        izz="3.36147210000475E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RVR20MINI_TEMP.SLDASM/meshes/L6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="continuous">
+    <origin
+      xyz="0.01 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="L5" />
+    <child
+      link="L6" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
